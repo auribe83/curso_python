@@ -1,6 +1,6 @@
-Apuentes curso python *****
+Apuentes curso python vvvv
 
-Ultimo video visto:13
+Ultimo video visto:20
 
 tipos de datos:
 Numericos(Enteros(int),coma flotante(float), complejos)
@@ -79,3 +79,35 @@ listas y otros diccionarios.
  elif
  switch
  or => o si no
+
+ Bucles: Repetir una o varias lineas de codigo.
+
+ Bucles determinados: Se ejecutan un numero de veces. Se sabe  a piori cunatas veces se va
+ a ejecutar el codigo del interior del bucle.
+
+ Bucles Indeterminados: Se ejecutan un numero indeterminado de veces. No se sabe a priori
+ cuantas veces se va a ejecutar el codigo del interior del bucle. El numero de veces que se
+ ejecutara dependera de las circunstancias durante la ejecucion del programa.
+
+ 	* Bucle for(determinado): 
+ 	  sintanxis: for variable in elemento a recorrer(lista, tupla cadena de texto):
+ 	  	cuerpo del bucle
+
+Bucle while(Indeterminado)
+sintaxis: while condicion:
+			cuerpo del bucle 	 
+
+Generadores: Son estructuras que extraen valores de una funcion y se almacenan en objetos iterables(que se pueden recorrer)
+-Estos valores se almacenan de uno en uno.
+-Cada vez que un generador alamacena un valor, esta permanece en un estado pausado hasta que se
+ solicita el siguiente. Esta caracteristica es conocida como "Suspension de estado"	
+
+ Ventajas:
+ 	*Son mas eficientes que las funcioenes tradicionales.
+ 	*Muy utiles con listas de valores infinitos.
+ 	*Bajo determinados escenarios, sera muy util que en un generador devuelva los valores de uno en uno.
+
+ sintanxis: Def generaNumeros():
+             yield numeros
+
+Generadores nueva instruccion yiel from: Simplificar el codigo de los generadores en el caso de utilizar bucles anidados
