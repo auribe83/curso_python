@@ -1,0 +1,113 @@
+Apuentes curso python vvvv
+
+Ultimo video visto:20
+
+tipos de datos:
+Numericos(Enteros(int),coma flotante(float), complejos)
+Textos
+Booleanos (True-False)
+
+Variable: espacio en la memoria del ordenador donde se almacenara un valor que podra cambiar durante la ejecucion del programa.
+
+Calculos matematicos
+para obtener el resto de una division se utiliza el %
+ejem: 10%3= 1
+
+para obtener la potencia de un numero se utiliza el doble **
+ejem: 5**3= 125
+
+para obtener la divion de un numero
+ejem: 9//2 = 4
+
+En python todo es objeto.
+La funcion type, retorna el tipo de dato de una variable
+
+Funciones: Conjunto de lineas de codigo agrupadas (bloque de codigo) que funcionan como una unidad realizando una tarea especifica.
+
+	*Las funciones en Python pueden devolver valores.
+	*Las funciones de Python pueden tener parametros/argumentos.
+	*A las funciones tambien se las denomina "Metodos" cuando se encuentran defenidas dentro de una clase.
+
+sintaxis:
+def nombre_funcion():	
+	-instrucciones, se debe aplicar identacion.
+	-return (opcional).
+
+def nombre_funcion(paramentros):
+	-instrucciones, se debe aplicar identacion.
+	-return (opcional).
+
+Ejecucion de uan funcion:
+nombre_funcion()
+
+nombre_funcion(parametros)	
+
+Listas: Estructura de datos que nos permite alamacenar gran cantidad de valores(equivalentes a los array en otros lenguajes de programacion)
+
+	* En python las listas pueden guardar diferente tipo de valores(en otros lenguajes no  ocurre esto con los array)
+	*Se pueden expandir dinamicamente añadiendo nuevos elementos(otra novedad respecto a los array en otros lenguajes)
+
+sintaxis:
+nombreLista=[elem1,elem2,elem3...]	
+
+Tuplas: Son listas inmutables, es decir no se pueden modificar despues de su creacion.
+	* No permiten añadir, elimina, movder elementos etc(no append, extend, remove)
+	* Si permiten extraer porciones, pero el resultado de la extraccion es una tupla nueva.
+	* No permiten busquedas (no index)
+	* Si permiten comprobar si un elemento se encuentra en la tupla.
+
+Ventaja:
+	* Mas rapidas
+	* Menos espacio (mayor optimizacion)
+	* Formatean Strings
+	* Pueden utilizarse como claves en un diccionario. (La lista no)
+
+Sintaxis: nombreLista=(elem1,elem2, elem3...)	
+
+
+Los diccionarios: Son estructuras de datos que nos permiten almacenar valores de diferentes tipo(entero, cadena de texto, decimales) e incluso
+listas y otros diccionarios.
+ * La principal caracteristica de los diccionario que los datos se alamcenan asociados a una clave de tal forma que se crea una asociacion de tipo 
+   clave:valor para cada elemento almacenado.
+ * Los elementos almacenados no estan ordenados. El orden es indifirente a la hora de almacenar informacion en un diccionario.
+ 
+ Estructura de control de bucle
+ Condicionales: Condicion a evaluar. Bloque de codigo que contiene en su interior instrucciones
+ 
+ If: si
+ else=> y si no es verdad
+ elif
+ switch
+ or => o si no
+
+ Bucles: Repetir una o varias lineas de codigo.
+
+ Bucles determinados: Se ejecutan un numero de veces. Se sabe  a piori cunatas veces se va
+ a ejecutar el codigo del interior del bucle.
+
+ Bucles Indeterminados: Se ejecutan un numero indeterminado de veces. No se sabe a priori
+ cuantas veces se va a ejecutar el codigo del interior del bucle. El numero de veces que se
+ ejecutara dependera de las circunstancias durante la ejecucion del programa.
+
+ 	* Bucle for(determinado): 
+ 	  sintanxis: for variable in elemento a recorrer(lista, tupla cadena de texto):
+ 	  	cuerpo del bucle
+
+Bucle while(Indeterminado)
+sintaxis: while condicion:
+			cuerpo del bucle 	 
+
+Generadores: Son estructuras que extraen valores de una funcion y se almacenan en objetos iterables(que se pueden recorrer)
+-Estos valores se almacenan de uno en uno.
+-Cada vez que un generador alamacena un valor, esta permanece en un estado pausado hasta que se
+ solicita el siguiente. Esta caracteristica es conocida como "Suspension de estado"	
+
+ Ventajas:
+ 	*Son mas eficientes que las funcioenes tradicionales.
+ 	*Muy utiles con listas de valores infinitos.
+ 	*Bajo determinados escenarios, sera muy util que en un generador devuelva los valores de uno en uno.
+
+ sintanxis: Def generaNumeros():
+             yield numeros
+
+Generadores nueva instruccion yiel from: Simplificar el codigo de los generadores en el caso de utilizar bucles anidados
